@@ -1,1 +1,24 @@
+*{
 
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #4233e3a;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: https://fonts.google.com/specimen/Suranna; 
+}
+
+p{
+/* maybe a different color for better readabilty*/ 
+  font-family: Roboto;
+}
+
+button {
+  background-color: #cb8e7e;
+  color: #FFFFFF;
+  font-weight: bold; 
+  font-family: Roboto;
+}
