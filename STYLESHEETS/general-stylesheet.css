@@ -1,14 +1,69 @@
 *{
+margin: auto;
+}
 
+input{
+  border: white solid 1.7px;
+  border-radius: .5em;
+  padding: .2em;
+  width: 53%;
+  background-color: #cb8e7e;
+}
+
+::placeholder {
+  color: white;
+  font-family: Roboto;
 }
 
 body {
   background-color: #FFFFFF;
-  color: #4233e3a;
+  color: #423e3a;
+  width: 100%;
+  overflow-wrap: break-word;
+  padding-top: 6em;
+}
+/*-----------------------------NAVBAR----------------------------------------*/
+.navbarmiddle, .navbarright{
+  height: 100%;
 }
 
+.navbarmiddle{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+
+.navbarright{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+nav{
+  padding: 1em 2em 1em 2em;
+  background-color: #cb8e7e;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+nav.navbar.navbar-dark{
+  height: 100px;
+}
+
+.navbar h1{
+  color: white;
+  text-shadow: black 1px 0 10px;
+}
+
+
+
+/*-----------------------------NAVBAR END----------------------------------------*/
 h1, h2, h3, h4, h5, h6{
-  font-family: https://fonts.google.com/specimen/Suranna; 
+  font-family: Suranna;
+
 }
 
 p{
@@ -22,3 +77,4 @@ button {
   font-weight: bold; 
   font-family: Roboto;
 }
+
