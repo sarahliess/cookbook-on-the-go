@@ -1,1 +1,29 @@
 
+
+
+.title-div{
+    padding:10px;
+    background-color: antiquewhite;
+    margin-top: 100px;;
+}
+
+.title{
+    text-align: center;
+
+}
+
+/* #recipe-image{
+    height:"200px";
+     width: auto;
+} */
+.recipe-image2{
+    height:"30px";
+     width: "30px";
+}
+
+.time-money-section {
+    width: "350px";
+    height: "350px";
+    background-color: beige;
+    border: 1px solid red;
+}
