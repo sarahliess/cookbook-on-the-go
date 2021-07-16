@@ -1,16 +1,68 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
     
     <title>Recipes </title>
+
+
+    <!-- Header Part -->
     <link rel="stylesheet" href="../STYLESHEETS/stylesheet-recipe.css" />
+
+    <!------------------STYLESHEETS----------------->
+    <link rel="stylesheet" href="../STYLESHEETS/general-stylesheet.css">
+    <link rel="stylesheet" href="../STYLESHEETS/stylesheet-home.css">
+    <link rel="stylesheet" href="../STYLESHEETS/stylesheet-category.css">
+    <link rel="stylesheet" href="../STYLESHEETS/stylesheet-recipe.css">
+
+
+<!------------------GOOGLE FONTS----------------->
+    <link href='https://fonts.googleapis.com/css?family=Markazi+Text|Roboto:400,400i,700,700i' rel='stylesheet' type='text/css'>
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
 </head>
 <body>
 
-<main>
+    <!----------------------------------NAVBAR BEGINNING--------------------------------------->
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="p-4">
+            <h4 class="text-white">Collapsed content</h4>
+            <span class="">Toggleable via the navbar brand.</span>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-dark fixed-top">
+            <div class="navbarmiddle">
+                <h1>COOKBOOK</h1>
+            </div>
+            <div class="navbarright">
+                
+                <input type="search" placeholder="Search"></input>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+<!------------ Recipes section start ---------------- -->
+
+
+   <main>
+
+    <!---------------------- Title of recipe----------- -->
     <section id="title-of-recipe">
         <div class="title-div">  
         <h2 class="title"> Title of Recipe</h2>
@@ -20,7 +72,7 @@
     <section id="image-of-the-meal">
     <div>  
        <!-- <img id="recipe-image" src= " https://www.iamexpat.de/sites/default/files/styles/article_full_custom_user_desktop_1x/public/german-food-cuisine-dishes.jpg?itok=WSCZUq3R"  > -->
-     <img class="recipe-image2" src="./Recipe-Images/pancakes.jpg" height="150px" width="auto">
+     <img class="recipe-image" src="./Recipe-Images/pancakes.jpg" height="150px" width="auto">
    
     
     </div>
@@ -34,6 +86,20 @@
     </div>
 </main>
     
+
+
+
+
+
+
+
+
+    
+
+	<script src="src/index.js">
+	</script>
 </body>
+
+
 </html>
 

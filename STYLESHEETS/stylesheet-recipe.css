@@ -3,7 +3,7 @@
 
 .title-div{
     padding:10px;
-    background-color: antiquewhite;
+    background-color: #cb8e7e;
     margin-top: 100px;;
 }
 
@@ -16,9 +16,9 @@
     height:"200px";
      width: auto;
 } */
-.recipe-image2{
-    height:"30px";
-     width: "30px";
+.recipe-image{
+    height:"400px";
+     width: 100%;
 }
 
 .time-money-section {
