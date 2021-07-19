@@ -18,7 +18,7 @@
 
 <body>
 
-    <!----------------------------------NAVBAR BEGINNING--------------------------------------->
+    <!--OLD NAVBAR-----------------------------------------------------------------------
     <div class="pos-f-t">
         <div class="collapse" id="navbarToggleExternalContent">
             <div class="p-4">
@@ -39,7 +39,21 @@
                 </button>
             </div>
         </nav>
+    </div>--->
+
+    <!----------------------------------NAVBAR NEW--------------------------------------->
+    <div class="navbar">
+        <div class="navbarone">
+            <h1>COOKBOOK</h1>
+        </div>
+        <div class="navbartwo">
+            <input type="search" placeholder="Search"></input>
+        </div>
+        <div class="navbarthree">
+            <img src="./img/2.png" alt="Menu">
+        </div>
     </div>
+
 
     <!------------------------------------------HEADER START--------------------------------------->
     <div class="header">
@@ -55,9 +69,86 @@
             recipes that don't require a lot of ingredients, time or cooking skills. Enjoy!</p> 
         </p>
         <img src="./img/icon cooking.png" alt="keep cookin'">
+        <br>
     </div>    
+   
+    <!---CARDS-->
+    <div class="containercards">
+        <div class="containertop">
+            <h3>TRENDING RECIPES</h3>
+        </div>
+        <div class="containerbottom">
+            <div class="cardone">
+                <button class="hovercard">TRY IT!</button>
+            </div>
+            <div class="cardtwo">
+                <button class="hovercard">TRY IT!</button>
+            </div>
+            <div class="cardthree">
+                <button class="hovercard">TRY IT!</button>
+            </div>
+            <div class="cardfour">
+                <button class="hovercard">TRY IT!</button>
+            </div>
+            <div class="cardfive">
+                <button class="hovercard">TRY IT!</button>
+            </div>
+        </div>
+            <br>
+            <button>SEE MORE</button>
+    </div>
 
-	<script src="src/index.js">
+    <!---CARDS END-->  
+
+    <!--------------------------------------------------------CATEGORIES------------------------------------------->
+    
+    <div class="categories">
+        <div class="categoriestop">
+            <h3>CATEGORIES</h3>
+        </div>
+        <div class="categoriesbottom">
+            <div class="categoryone">
+                <p> > 5 INGREDIENTS</p>
+            </div>
+            <div class="categorytwo">
+                <p>ALL IN ONE POT</p>
+            </div>
+            <div class="categorythree">
+                <p>LEFTOVER MAGIC</p>
+            </div>
+            <div class="categoryfour">
+                <p>COLD RECIPES</p>
+            </div>
+        </div>
+    </div>
+
+   <!--------------------------------------------------------SHUFFLE------------------------------------------->
+
+   <div class="shuffle">
+       <h2>CAN'T DECIDE WHICH ONE TO PICK?</h2>
+       <p>Click the button below and get some inspiration!</p>
+       <button>SHUFFLE!</button>
+       <div class="shuffleimage"></div>
+   </div>
+
+      <!--------------------------------------------------------FOOTER------------------------------------------->
+    <footer>
+        <div class="footerleft">
+            <h4>SIGN UP FOR OUR NEWSLETTER</h4>
+            <input type="text" name="" id="" spaceholder="eMail address">
+            <button>SUBMIT</button>
+        </div>
+        <div class="footerright">
+            <a href="https:/www.facebook.com" target="_blank"><img src="./img/facebook.png" alt=""></a>
+            <a href="https:/www.instagram.com" target="_blank"><img src="./img/instagram.png" alt=""></a>
+            <a href="https:/www.youtube.com" target="_blank"><img src="./img/youtube.png" alt=""></a>
+            <a href="https:/www.pinterest.com" target="_blank"><img src="./img/pinterest.png" alt=""></a>
+        </div>
+    </footer>
+    
+
+
+	<script src="index.js" async>
 	</script>
 </body>
 

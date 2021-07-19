@@ -1,5 +1,6 @@
 *{
 margin: auto;
+color: #423e3a;
 }
 
 input{
@@ -7,7 +8,7 @@ input{
   border-radius: .5em;
   padding: .2em;
   width: 53%;
-  background-color: #cb8e7e;
+  background-color: #423e3a;
 }
 
 ::placeholder {
@@ -20,9 +21,9 @@ body {
   color: #423e3a;
   width: 100%;
   overflow-wrap: break-word;
-  padding-top: 6em;
 }
-/*-----------------------------NAVBAR----------------------------------------*/
+/*OLD NAVBAR
+/*-----------------------------OLD----------------------------------------
 .navbarmiddle, .navbarright{
   height: 100%;
 }
@@ -43,7 +44,7 @@ body {
 
 nav{
   padding: 1em 2em 1em 2em;
-  background-color: #cb8e7e;
+  background-color: #423e3a;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
@@ -57,8 +58,67 @@ nav.navbar.navbar-dark{
   color: white;
   text-shadow: black 1px 0 10px;
 }
+*/
 
+/*NEW NAV*/
 
+.navbar{
+  width: 100%;
+  display: flex;
+  height: 110px;
+  padding: 0 1em 0 1em;
+  background-color: #423e3a; 
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.navbar h1{
+  color: white;
+  text-shadow: black 1px 0 10px;
+}
+
+.navbarone{
+  width: 60%;
+}
+
+.navbartwo{
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.navbartwo input{
+  width: 90%;
+  max-width: 270px;;
+  padding: .4em;
+  color: white;
+}
+
+.navbartwo input:hover{
+  cursor: ;
+}
+
+.navbarthree{
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  
+}
+
+.navbarthree img{
+  border: solid .5px white;
+  border-radius: .4em;
+  height: 50px;
+  padding: .2em;
+  
+}
+
+.navbarthree img:hover{
+  background-color: #cb8e7e;
+  cursor: pointer;
+  padding: 0;
+}
 
 /*-----------------------------NAVBAR END----------------------------------------*/
 h1, h2, h3, h4, h5, h6{
@@ -78,3 +138,29 @@ button {
   font-family: Roboto;
 }
 
+/*-----------------------FOOTER---------------------------*/
+footer{
+  background-color: #cb8e7e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerleft{
+  border: solid green;
+  width: 70%;
+}
+
+.footerright{
+  border: solid green;
+  width: 40%;
+}
+
+.footerleft input{
+  width: 10%;
+  background-color: #cb8e7e;
+}
+
+.footerright img{
+  width: 50px;
+}
