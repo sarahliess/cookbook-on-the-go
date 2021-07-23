@@ -20,7 +20,7 @@ body {
   color: #423e3a;
   width: 100%;
   overflow-wrap: break-word;
-  padding-top: 6em;
+  /* padding-top: 6em; */
 }
 /*-----------------------------NAVBAR----------------------------------------*/
 .navbarmiddle, .navbarright{
