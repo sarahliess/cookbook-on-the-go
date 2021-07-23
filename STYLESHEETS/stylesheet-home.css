@@ -1,4 +1,6 @@
 
+/*---------------------------------------------------HEADER----------------------------------------------------------*/
+
 .header{
     display: flex;
     justify-content: center;
@@ -9,6 +11,7 @@
     background-position: center;
     width: 100%;
     height: 550px;
+    opacity: 0.9;
 }
 
 .header h1{
@@ -18,6 +21,8 @@
     font-size: 3.5em;
     text-shadow: black 1px 0 10px;
 }
+
+/*---------------------------------------------------DESCRIPTION----------------------------------------------------------*/
 
 .description{
     display: flex;
@@ -32,6 +37,7 @@
 
 .description h2{
     margin-bottom: .5em;
+    font-size: 2em;
 }
 
 .description p{
@@ -48,7 +54,7 @@
     justify-content: center;
 }
 
-/*----------------------------------------CARDS------------------------------------------*/
+/*---------------------------------------------------CARDS----------------------------------------------------------*/
 
 .containercards { 
     background-color: #f5dacc;
@@ -57,14 +63,14 @@
     align-items: center;
     margin: auto;
     padding: 0 0 2.3em 0;
-}
+} 
 
 .containertop{
     padding: 2em;
 }
 
 .containertop h3{
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .containerbottom{
@@ -73,7 +79,51 @@
     width: 90%;
 }
 
-.cardone, .cardtwo,  .cardthree, .cardfour, .cardfive, .cardsix{
+.hidden{
+    display: none;
+}
+
+
+.overlay{
+   /*deleted "position: absolute" because it created an overlay on the top div*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    font-family: 'roboto';
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.20s; 
+}
+
+.overlay p{
+    color: white;
+    font-family: Roboto;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.overlay:hover {
+    opacity: 1;
+
+}
+
+.overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.overlay:hover > *  {
+    transform: translateY(0);
+}
+
+.cardone, .cardtwo,  .cardthree, .cardfour, .cardfive, .cardsix, .cardseven, .cardeight, .cardnine,.cardten{
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 260px;
@@ -84,7 +134,7 @@
 }
 
 
-.cardone:hover, .cardtwo:hover,  .cardthree:hover, .cardfour:hover, .cardfive:hover, .cardsix:hover{
+.cardone:hover, .cardtwo:hover,  .cardthree:hover, .cardfour:hover, .cardfive:hover, .cardsix:hover, .cardseven:hover, .cardeight:hover, .cardnine:hover,.cardten:hover{
    opacity: 50%;
    cursor: pointer;
    transform: scale(1.06);
@@ -125,20 +175,33 @@ button.hovercard:hover{
 } 
 
 .cardsix{
-    background-image: url(https://images.unsplash.com/photo-1593253500499-50e579a5733f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80)
-} 
+    background-image: url(https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80);
+}
 
+.cardseven{
+    background-image: url(https://images.unsplash.com/photo-1571047399553-603e2138b646?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80);
+}
 
+.cardeight{
+    background-image: url(https://images.unsplash.com/photo-1626700051175-6818013e1d4f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80);
+}
 
-/*UPDATE GENERAL STYLESHEET?-------*/
-button{
+.cardnine{
+    background-image: url(https://images.unsplash.com/photo-1599749012259-126a66c5f674?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=670&q=80);
+}
+
+.cardten{
+    background-image: url(https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);
+}
+
+button, .see-more-button, .submit-button, .hovercard{
     width: 140px;
     border: none;
     padding: .6em;
     margin-top: 2em;
 }
 
-/*------------------------CATEGORIES----------------------------*/
+/*---------------------------------------------------CATEGORIES----------------------------------------------------------*/
 
 .categories{
     display: flex;
@@ -153,7 +216,7 @@ button{
 }
 
 .categoriestop h3{
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .categoriesbottom{
@@ -212,35 +275,14 @@ button{
     cursor: pointer;
 }
 
-/*------------------------------------SHUFFLE------------------------------------*/
-.shuffle{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+img.up{
+    width: 55px;
     background-color: #423e3a;
-    padding: 2em 0 2em 0;
-}
+    padding: 1em;
+    margin-bottom: 1em;
+  }
 
-.shuffle p, .shuffle h2{
-    color: white;
-}
-
-.shuffle button{
-    margin: auto;
-}
-
-.shuffleimage{
-    border: solid 3px white;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    width: 400px;
-    height: 200px;
-}
-
-
-
-
-/*-----------------------MEDIA QUERIES---------------------------*/
+/*---------------------------------------------------MEDIE QUERIES----------------------------------------------------------*/
 /*--------------LARGE---------------*/
 @media only screen and (max-width: 1144px){
     .header{
@@ -259,14 +301,18 @@ button{
         width: 90%;
     }   
 
-    .cardfive{
+    .cardfive, .cardten{
         display: none;
+    }
+
+    .categories p{
+        font-size: 1em;
     }
 }
 
 /*--------------MEDIUM---------------*/
 @media only screen and (max-width: 927px){
-    .cardfour {
+    .cardfour, .cardnine {
         display: none;
     }   
 }
@@ -285,6 +331,8 @@ button{
         width: 95;
        
     }   
+
+    
 }
 
 /*--------------EXTRA SMALL---------------*/
@@ -324,10 +372,11 @@ button{
     }
 }
 
-/*-------------------XX SMALL------------------------*/ 
+
+/*--------------EXTRA EXTRA SMALL---------------*/
 
 @media only screen and (max-width: 633px){
-    .cardone, .cardtwo, .cardthree{
+    .cardone, .cardtwo, .cardthree, .cardsix, .cardseven, .cardeight{
         width: 28%;
         height: 10em;
         margin: 1%;
@@ -335,5 +384,9 @@ button{
 
     .containerbottom{
         justify-content: center;
+    }
+
+    .categories p{
+        font-size: .6em;
     }
 }

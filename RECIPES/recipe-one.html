@@ -2,42 +2,42 @@
 <html>
 
 <head>
-	<title>cookbook</title>
-	<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!------------------STYLESHEETS----------------->
-    <link rel="stylesheet" href="../STYLESHEETS/general-stylesheet.css">
-    <link rel="stylesheet" href="../STYLESHEETS/stylesheet-home.css">
-    <link rel="stylesheet" href="../STYLESHEETS/stylesheet-category.css">
-    <link rel="stylesheet" href="../STYLESHEETS/stylesheet-recipe.css">
-     <!------------------GOOGLE FONTS----------------->
-     <link href='https://fonts.googleapis.com/css?family=Markazi+Text|Roboto:400,400i,700,700i' rel='stylesheet' type='text/css'>
-    <!--BOOTSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel='shortcut icon' type='image/x-icon' href='./img/COOKBOOK_logo_2.png'/>
+        <title>COOKBOOK | RECIPE</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!------------------STYLESHEETS----------------->
+        <link rel="stylesheet" href="./STYLESHEETS/general-stylesheet.css">
+        <link rel="stylesheet" href="./STYLESHEETS/stylesheet-home.css">
+        <link rel="stylesheet" href="./STYLESHEETS/stylesheet-category.css">
+        <link rel="stylesheet" href="./STYLESHEETS/stylesheet-recipe.css">
+        <!------------------GOOGLE FONTS----------------->
+        <link href='https://fonts.googleapis.com/css?family=Markazi+Text|Roboto:400,400i,700,700i' rel='stylesheet' type='text/css'>
+        <!--BOOTSTRAP-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-    <!----------------------------------NAVBAR BEGINNING--------------------------------------->
-    <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="p-4">
-            <h4 class="text-white">Collapsed content</h4>
-            <span class="">Toggleable via the navbar brand.</span>
-            </div>
+<!----------------------------------NAVBAR NEW--------------------------------------->
+    <div class="navbar">
+        <div class="navbarone">
+            <img src="./img/COOKBOOK_logo_2.png" alt="">
+            <h1>COOKBOOK</h1>
         </div>
-
-        <nav class="navbar navbar-dark fixed-top">
-            <div class="navbarmiddle">
-                <h1>COOKBOOK</h1>
-            </div>
-            <div class="navbarright">
-                
+            <div class="navbartwo">
                 <input type="search" placeholder="Search"></input>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
             </div>
-        </nav>
+                <div class="navbarthree topnav">
+                    <ul>
+                        <!--<a href="" class="hamburger"><img src="./img/2.png" onclick={myFunction}></a>
+                            <div id="#hide"> -->
+                                <a href="#home" class="navitem active">HOME</a>
+                                <a href="#trending" class="navitem hide">TRENDING</a>
+                                <a href="#categories"class="navitem hide">CATEGORIES</a>
+                                <a href="#shuffle" class="navitem hide">SHUFFLE</a>
+                            </div>
+                    </ul>
+                </div>
     </div>
 
 	<script src="src/index.js">
