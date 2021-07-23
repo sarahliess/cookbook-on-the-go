@@ -24,7 +24,7 @@ body{
 } */
 
 
-/* .rec-div{
+.rec-div{
     width: 100%;
     height: 700px;
     background-image: url("../RECIPES/Recipe-Images/pancakes.jpg") ;
@@ -32,7 +32,7 @@ body{
     background-repeat: no-repeat;
     background-position:center ;
 
-} */
+}
 
 
 
@@ -87,7 +87,9 @@ img_overlay {
 /********  Ingredients  section  *****************/
 
 
-
+.ingredients-table{
+    padding: 2em 0 2em 0;
+}
 
 .cart-img{
     width: 50px;
@@ -146,6 +148,7 @@ img_overlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 2em 0 2em 0;
     text-align: center;
     /* font-family: ;
      */
@@ -163,7 +166,7 @@ img_overlay {
 
 
 
-.video-share{
+/* .video-share{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -171,9 +174,18 @@ img_overlay {
     padding-top: 30px;
     
 }
+ */
 
-
-
+ .video-div{
+    display: flex; 
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+ 
+ #youtube-button, #share-button{
+     margin: 2em 2em 0 2em;
+ }
 .back-button{
    display: flex;
    justify-content: center;

@@ -2,7 +2,8 @@
 <html>
 
 <head>
-	<title>cookbook HOME</title>
+    <link rel='shortcut icon' type='image/x-icon' href='./img/COOKBOOK_logo_2.png'/>
+	<title>COOKBOOK | HOME</title>
 	<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!------------------STYLESHEETS----------------->
@@ -18,35 +19,34 @@
 
 <body>
 
-    <!----------------------------------NAVBAR BEGINNING--------------------------------------->
-    <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="p-4">
-            <h4 class="text-white">Collapsed content</h4>
-            <span class="">Toggleable via the navbar brand.</span>
-            </div>
+    <!----------------------------------NAVBAR NEW--------------------------------------->
+    <div class="navbar">
+        <div class="navbarone">
+            <img src="./img/COOKBOOK_logo_2.png" alt="">
+            <h1>COOKBOOK</h1>
         </div>
-
-        <nav class="navbar navbar-dark fixed-top">
-            <div class="navbarmiddle">
-                <h1>COOKBOOK</h1>
-            </div>
-            <div class="navbarright">
-                
+            <div class="navbartwo">
                 <input type="search" placeholder="Search"></input>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
             </div>
-        </nav>
+                <div class="navbarthree topnav">
+                    <ul>
+                        <!--<a href="" class="hamburger"><img src="./img/2.png" onclick={myFunction}></a>
+                            <div id="#hide"> -->
+                                <a href="#home" class="navitem active">HOME</a>
+                                <a href="#trending" class="navitem hide">TRENDING</a>
+                                <a href="#categories"class="navitem hide">CATEGORIES</a>
+                                <a href="#shuffle" class="navitem hide">SHUFFLE</a>
+                            </div>
+                    </ul>
+                </div>
     </div>
 
     <!------------------------------------------HEADER START--------------------------------------->
-    <div class="header">
+    <div class="header" id="home">
       <h1>REAL RECIPES, FOR REAL PEOPLE, REAL FAST</h1>
     </div>
 
-     <!------------------------------------------TITLE DESCRIPTION--------------------------------------->
+    <!------------------------------------------TITLE DESCRIPTION--------------------------------------->
     <div class="description">
         <h2>A COOKBOOK FOR YOU AND ME</h2>      
         <p>We all love eating yummy food. But sometimes we don't have a lot of time on our hands to 
@@ -55,9 +55,147 @@
             recipes that don't require a lot of ingredients, time or cooking skills. Enjoy!</p> 
         </p>
         <img src="./img/icon cooking.png" alt="keep cookin'">
+        <br>
     </div>    
+   
+    <!---CARDS-->
+    <div class="containercards" id="trending">
+        <div class="containertop">
+            <h3>TRENDING RECIPES</h3>
+        </div>
+        <div class="containerbottom" id="show">
+            <div class="cardone">
+                <div class="overlay">   
+                    <p>STRAWBERRY PANNA COTTA</p>
+                    <button class="hovercard">TRY IT!</button>
+                </div>
+            </div>
+            <div class="cardtwo">
+                <div class="overlay">
+                    <p>SWEDISH MEATBALLS</p>
+                    <button class="hovercard">TRY IT!</button>
+                </div>
+            </div>
+            <div class="cardthree">
+                <div class="overlay">
+                    <p>FRUITY FRENCH TOAST</p>
+                    <button class="hovercard">TRY IT!</button>
+                </div>
+            </div>
+            <div class="cardfour">
+                <div class="overlay">
+                    <p>SLOW BAKED SALMON</p>
+                    <button class="hovercard">TRY IT!</button>
+                </div>
+            </div>
+            <div class="cardfive">
+                <div class="overlay">
+                    <p>HALOUMI SANDWICH</p>
+                    <button class="hovercard">TRY IT!</button>
+                </div>
+            </div>
+        </div>
 
-	<script src="src/index.js">
+        <br>
+        <!------------------------------------------HIDDEN RECIPES--------------------------------------->
+
+        <div class="containerbottom hidden" id="hidden-recipes">
+            <div class="cardsix">
+                <div class="overlay">   
+                    <p>RASPBERRY CAKE</p>
+                    <button class="hovercard">TRY IT!</button>
+                </div>
+            </div>
+            <div class="cardseven">
+                <div class="overlay">
+                    <p>BUDDHA BOWL</p>
+                    <button class="hovercard">TRY IT!</button>
+                </div>
+            </div>
+            <div class="cardeight">
+                <div class="overlay">
+                    <p>CHICKEN WRAP</p>
+                    <button class="hovercard">TRY IT!</button>
+                </div>
+            </div>
+            <div class="cardnine">
+                <div class="overlay">
+                    <p>POTATO CASSEROLE</p>
+                    <button class="hovercard">TRY IT!</button>
+                </div>
+            </div>
+            <div class="cardten">
+                <div class="overlay">
+                    <p>PUMPKIN SOUP</p>
+                    <button class="hovercard">TRY IT!</button>
+                </div>
+            </div>
+        </div>
+            <br>
+            <button class="see-more-button">CLICK ME</button>
+    </div>
+
+  
+
+    <!------------------------------------------CATEGORIES--------------------------------------->
+    
+    <div class="categories" id="categories"> 
+        <div class="categoriestop">
+            <h3>CATEGORIES</h3>
+        </div>
+        <div class="categoriesbottom">
+            <div class="categoryone">
+                <div class="overlay"> 
+                <p> > 5 INGREDIENTS</p>
+                </div>
+            </div>
+            <div class="categorytwo">
+                <div class="overlay"> 
+                <p>ALL IN ONE POT</p>
+                </div>
+            </div>
+            <div class="categorythree">
+                <div class="overlay"> 
+                <p>LEFTOVER MAGIC</p>
+                </div>
+            </div>
+            <div class="categoryfour">
+                <div class="overlay"> 
+                <p>COLD RECIPES</p>
+                </div>
+            </div>
+        </div>
+        <a href="#home"><img src="./img/arrow up.png" class="up" alt=""></a>
+   </div>
+    </div>
+           
+
+    <!------------------------------------------FOOTER--------------------------------------->
+    <footer>
+        <div class="footerleft">
+            <div class="leftone">
+             <img src="./img/COOKBOOK_logo_2.png" alt="">
+            </div>
+            <div class="lefttwo">
+                <h4>SIGN UP FOR OUR NEWSLETTER</h4>
+                <input type="text" name="" id="" placeholder="eMail adress">
+                <button class="submit-button">SUBMIT</button>
+            </div>
+        </div>
+         
+
+        <div class="footerright">
+            <h4>FOLLOW US ON SOCIAL MEDIA!</h4>
+            <a href="https:/www.facebook.com" target="_blank"><img src="./img/facebook.png" alt=""></a>
+            <a href="https:/www.instagram.com" target="_blank"><img src="./img/instagram.png" alt=""></a>
+            <a href="https:/www.youtube.com" target="_blank"><img src="./img/youtube.png" alt=""></a>
+            <a href="https:/www.pinterest.com" target="_blank"><img src="./img/pinterest.png" alt=""></a>
+        </div>
+    </footer>
+    
+
+
+	<script src="index.js">
 	</script>
 </body>
 

@@ -43,19 +43,20 @@
             <span class="">Toggleable via the navbar brand.</span>
             </div>
         </div>
-
-        <nav class="navbar navbar-dark fixed-top">
-            <div class="navbarmiddle">
-                <h1>COOKBOOK</h1>
-            </div>
-            <div class="navbarright">
-                
+            <div class="navbartwo">
                 <input type="search" placeholder="Search"></input>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
             </div>
-        </nav>
+                <div class="navbarthree topnav">
+                    <ul>
+                        <!--<a href="" class="hamburger"><img src="./img/2.png" onclick={myFunction}></a>
+                            <div id="#hide"> -->
+                                <a href="#home" class="navitem active">HOME</a>
+                                <a href="#trending" class="navitem hide">TRENDING</a>
+                                <a href="#categories"class="navitem hide">CATEGORIES</a>
+                                <a href="#shuffle" class="navitem hide">SHUFFLE</a>
+                            </div>
+                    </ul>
+                </div>
     </div>
 <!------------ Recipes section start ---------------- -->
 
@@ -65,7 +66,7 @@
     <!---------------------- Title of recipe----------- -->
     <section id="title-of-recipe">
         <div class="title-div">  
-        <h2 class="title"> Pesto Pasta</h2>
+        <h2 class="title"> PAN CAKE</h2>
      </div>
     </section>
 
@@ -76,9 +77,10 @@ child: absolute; -->
 
     <section id="image-of-the-meal">
     <div class="rec-div">  
-      <img src="../RECIPES/Recipe-Images/pesto-pasta.jpg"   width="100%" height="700px">
+     
     
       <!-- <div class="img_overlay">
+         <img src="../RECIPES/Recipe-Images/pesto-pasta.jpg"   width="100%" height="700px">
         <div class="clock_img">
           <img src="https://cdn.discordapp.com/attachments/865512073681305651/867780959952699412/clock.png "  width="70px" height="70px" >
           <p class="img_description1">20 min</p>
@@ -103,7 +105,7 @@ child: absolute; -->
       <div class="heading-part">  
         
         
-           <h2 class="what-we-need">   What we Need</h2>
+           <h2 class="what-we-need">WHAT WE NEED</h2>
       </div>
 
         <table class="table table-striped" style="width: 30%">
@@ -168,15 +170,9 @@ child: absolute; -->
 
    <!-- Preparation -->
    <section id="preparation">
-      
-      <div class="preparation-part1"> 
-         
-        <div><img  class="cooking-img "  src="./Recipe-Images/pprepare-img.png" height="50px" width="50px"></div> 
-      
-      
-      <div><h2 class="heading">Let's Cook Together</h2></div>
-          </div>
+    
           <div class="how-to-prepare">
+            <div><h2 class="heading">LET'S COOK TOGETHER</h2></div>
            <p><b>step 1:</b>In a large bowl whisk together the flour, baking powder,
              salt and sugar. In a separate bowl whisk together the egg, milk, and melted butter. 
              Make a well in the center of the dry ingredients and then pour in the egg mixture,
@@ -216,40 +212,52 @@ child: absolute; -->
                   
                   
                   </p>
-   
+                  
+                  <section id="sharing">  
+                    <div class=video-div>  
+                      <button id="youtube-button">VIDEO</button>
+                      <button id="share-button">SHARE</button>
+                   </div>
+              </section>
        </div>
 
 
      
   </section>
 
-
-   <section id="sharing">  
-     <div id="video-share">
-        <div class=video-div>  
-     <button id="youtube-button">video</button>
-     </div>
-
-    <div id="share-div">  
-      <button id="share-button">share</button>
-       
-    </div>
-   </div>
-  </section>
+  
+   
 
    <div class="back-button">  
 
-   <button >Back To Home</button>
+   <button >BACK TO HOME</button>
 
   </div>
-
-
-
-
 </main>
     
 
+<!------------------------------------------FOOTER--------------------------------------->
+<footer>
+  <div class="footerleft">
+      <div class="leftone">
+       <img src="../img/COOKBOOK_logo_2.png" alt="">
+      </div>
+      <div class="lefttwo">
+          <h4>SIGN UP FOR OUR NEWSLETTER</h4>
+          <input type="text" name="" id="" placeholder="eMail adress">
+          <button class="submit-button">SUBMIT</button>
+      </div>
+  </div>
+   
 
+  <div class="footerright">
+      <h4>FOLLOW US ON SOCIAL MEDIA!</h4>
+      <a href="https:/www.facebook.com" target="_blank"><img src="../img/facebook.png" alt=""></a>
+      <a href="https:/www.instagram.com" target="_blank"><img src="../img/instagram.png" alt=""></a>
+      <a href="https:/www.youtube.com" target="_blank"><img src="../img/youtube.png" alt=""></a>
+      <a href="https:/www.pinterest.com" target="_blank"><img src="../img/pinterest.png" alt=""></a>
+  </div>
+</footer>
 
 
 
