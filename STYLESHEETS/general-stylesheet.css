@@ -56,13 +56,8 @@ p{
 
 .navbar{
   width: 100%;
-  display: flex;
-  height: 110px;
-  padding: 0 1em 0 1em;
-  background-color: #423e3a; 
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  -moz-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 6px -6px black;
+  overflow-wrap: break-word;
+  /* padding-top: 6em; */
 }
 
 .navbar h1{
