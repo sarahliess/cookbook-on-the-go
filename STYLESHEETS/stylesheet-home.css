@@ -1,4 +1,6 @@
 
+/*---------------------------------------------------HEADER----------------------------------------------------------*/
+
 .header{
     display: flex;
     justify-content: center;
@@ -9,6 +11,7 @@
     background-position: center;
     width: 100%;
     height: 550px;
+    opacity: 0.9;
 }
 
 .header h1{
@@ -18,6 +21,8 @@
     font-size: 3.5em;
     text-shadow: black 1px 0 10px;
 }
+
+/*---------------------------------------------------DESCRIPTION----------------------------------------------------------*/
 
 .description{
     display: flex;
@@ -32,6 +37,7 @@
 
 .description h2{
     margin-bottom: .5em;
+    font-size: 2em;
 }
 
 .description p{
@@ -41,4 +47,346 @@
 
 .description img{
     width: 16em;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+/*---------------------------------------------------CARDS----------------------------------------------------------*/
+
+.containercards { 
+    background-color: #f5dacc;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 0 0 2.3em 0;
+} 
+
+.containertop{
+    padding: 2em;
+}
+
+.containertop h3{
+    font-size: 2em;
+}
+
+.containerbottom{
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.hidden{
+    display: none;
+}
+
+
+.overlay{
+   /*deleted "position: absolute" because it created an overlay on the top div*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    font-family: 'roboto';
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.20s; 
+}
+
+.overlay p{
+    color: white;
+    font-family: Roboto;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.overlay:hover {
+    opacity: 1;
+
+}
+
+.overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.overlay:hover > *  {
+    transform: translateY(0);
+}
+
+.cardone, .cardtwo,  .cardthree, .cardfour, .cardfive, .cardsix, .cardseven, .cardeight, .cardnine,.cardten{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 260px;
+    width: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.cardone:hover, .cardtwo:hover,  .cardthree:hover, .cardfour:hover, .cardfive:hover, .cardsix:hover, .cardseven:hover, .cardeight:hover, .cardnine:hover,.cardten:hover{
+   opacity: 50%;
+   cursor: pointer;
+   transform: scale(1.06);
+}
+
+button.hovercard{
+    width: 60%;
+    height: 30px;
+    padding: 2% 0 2% 0;
+    
+}
+
+button.hovercard:hover{
+    opacity: 100%;
+   
+}
+
+.cardone{
+    background-image: url(https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80);
+}
+
+.cardtwo{
+    background-image: url(https://images.unsplash.com/photo-1529042410759-befb1204b468?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=333&q=80);
+
+}
+
+.cardthree{
+    background-image: url(https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+
+}
+
+.cardfour{
+    background-image: url(https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80);
+}
+
+.cardfive{
+    background-image: url(https://images.unsplash.com/photo-1595436252086-7496fb8c41e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80)
+} 
+
+.cardsix{
+    background-image: url(https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80);
+}
+
+.cardseven{
+    background-image: url(https://images.unsplash.com/photo-1571047399553-603e2138b646?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80);
+}
+
+.cardeight{
+    background-image: url(https://images.unsplash.com/photo-1626700051175-6818013e1d4f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80);
+}
+
+.cardnine{
+    background-image: url(https://images.unsplash.com/photo-1599749012259-126a66c5f674?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=670&q=80);
+}
+
+.cardten{
+    background-image: url(https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);
+}
+
+button, .see-more-button, .submit-button, .hovercard{
+    width: 140px;
+    border: none;
+    padding: .6em;
+    margin-top: 2em;
+}
+
+/*---------------------------------------------------CATEGORIES----------------------------------------------------------*/
+
+.categories{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.categoriestop{
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+
+.categoriestop h3{
+    font-size: 2em;
+}
+
+.categoriesbottom{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+}
+
+.categoryone, .categorytwo, .categorythree, .categoryfour{
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: none;
+    height: 300px;
+    width: 90%;
+    margin-bottom: 3em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.categoryone p, .categorytwo p, .categorythree p, .categoryfour p{
+    border: solid #cb8e7e;
+    background: #cb8e7e;
+    width: 60%;
+    padding: .2em;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Roboto;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.categoryone{
+    background-image: url(https://images.unsplash.com/photo-1547592180-85f173990554?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80);
+    background-position: center;
+}
+
+.categorytwo{
+    background-image: url(https://images.unsplash.com/photo-1534080564583-6be75777b70a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80);
+    background-position: center;
+}
+
+.categorythree{
+    background-image: url(https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80);
+    background-position: right;
+}
+
+.categoryfour{
+    background-image: url(https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80);
+    background-position: center;
+}
+
+.categoryone:hover, .categorytwo:hover, .categorythree:hover, .categoryfour:hover{
+    transform: scale(1.06);
+    opacity: 50%;
+    cursor: pointer;
+}
+
+img.up{
+    width: 55px;
+    background-color: #423e3a;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+
+/*---------------------------------------------------MEDIE QUERIES----------------------------------------------------------*/
+/*--------------LARGE---------------*/
+@media only screen and (max-width: 1144px){
+    .header{
+        height: 450px;
+    }
+    
+    .header h1{
+        width: 90%;
+    }
+    
+    .description{
+        width: 90%;
+    }
+    
+    .containerbottom{
+        width: 90%;
+    }   
+
+    .cardfive, .cardten{
+        display: none;
+    }
+
+    .categories p{
+        font-size: 1em;
+    }
+}
+
+/*--------------MEDIUM---------------*/
+@media only screen and (max-width: 927px){
+    .cardfour, .cardnine {
+        display: none;
+    }   
+}
+
+/*--------------SMALL---------------*/
+@media only screen and (max-width: 834px){
+    .header{
+        height: 350px;
+    }
+    
+    .header h1{
+        font-size: 3em;
+    }
+
+    .containerbottom{
+        width: 95;
+       
+    }   
+
+    
+}
+
+/*--------------EXTRA SMALL---------------*/
+@media only screen and (max-width: 701px){
+    .header{
+        height: 300px;
+    }
+    
+    .header h1{
+        font-size: 2em;
+        width: 70%;
+    }
+
+    .navbarone{
+        width: 30%;
+    }
+
+    .navbarone h1{
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    .navbartwo input{
+        padding: 0 0 0 .2em;
+        height: 20%;
+        font-size: 14px;
+
+    }
+
+    .navbarthree img{ 
+        height: 30px;
+        width: 30px;
+    } 
+
+    .containerbottom{
+        width: 98%;
+    }
+}
+
+
+/*--------------EXTRA EXTRA SMALL---------------*/
+
+@media only screen and (max-width: 633px){
+    .cardone, .cardtwo, .cardthree, .cardsix, .cardseven, .cardeight{
+        width: 28%;
+        height: 10em;
+        margin: 1%;
+    }
+
+    .containerbottom{
+        justify-content: center;
+    }
+
+    .categories p{
+        font-size: .6em;
+    }
 }
