@@ -9,8 +9,7 @@
     <!------------------STYLESHEETS----------------->
     <link rel="stylesheet" href="./STYLESHEETS/general-stylesheet.css">
     <link rel="stylesheet" href="./STYLESHEETS/stylesheet-home.css">
-    <link rel="stylesheet" href="./STYLESHEETS/stylesheet-category.css">
-    <link rel="stylesheet" href="./STYLESHEETS/stylesheet-recipe.css">
+ 
     <!------------------GOOGLE FONTS----------------->
     <link href='https://fonts.googleapis.com/css?family=Markazi+Text|Roboto:400,400i,700,700i' rel='stylesheet' type='text/css'>
     <!--BOOTSTRAP-->
@@ -18,33 +17,38 @@
 </head>
 
 <body>
-
-    <!----------------------------------NAVBAR NEW--------------------------------------->
-    <div class="navbar">
-        <div class="navbarone">
-            <img src="./img/COOKBOOK_logo_2.png" alt="">
-            <h1>COOKBOOK</h1>
+<!-- -----------------------------HEADER------------------------------->
+    <header class="section">
+			
+        <!-- container -->
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img src="../img/16.png" alt="logo" class="d-inline-block align-top logo"/>
+          COOKBOOK
+          </a>
+          <span data-toggle-target=".site-nav" class="toggle-btn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+            <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+          </svg></span> 
+          <nav class="site-nav">
+            <ul class="group">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">RECIPES</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </nav>
         </div>
-            <div class="navbartwo">
-                <input type="search" placeholder="Search"></input>
-            </div>
-                <div class="navbarthree topnav">
-                    <ul>
-                        <!--<a href="" class="hamburger"><img src="./img/2.png" onclick={myFunction}></a>
-                            <div id="#hide"> -->
-                                <a href="#home" class="navitem active">HOME</a>
-                                <a href="#trending" class="navitem hide">TRENDING</a>
-                                <a href="#categories"class="navitem hide">CATEGORIES</a>
-                                <a href="#shuffle" class="navitem hide">SHUFFLE</a>
-                            </div>
-                    </ul>
-                </div>
-    </div>
+      
+        <div class="title">
+          <h1 class="catTitle">20 MINUTES RECIPES</h1>
+          <p class="catSlogan">REAL RECIPES, FOR REAL PEOPLE, REAL FAST</p>
+        </div>
+          
+      </header>
 
-    <!------------------------------------------HEADER START--------------------------------------->
-    <div class="header" id="home">
-      <h1>REAL RECIPES, FOR REAL PEOPLE, REAL FAST</h1>
-    </div>
+    <!------------------------------------------HEADER START------------------------------------- -->
+
 
     <!------------------------------------------TITLE DESCRIPTION--------------------------------------->
     <div class="description">
@@ -67,7 +71,7 @@
             <div class="cardone">
                 <div class="overlay">   
                     <p>STRAWBERRY PANNA COTTA</p>
-                    <button class="hovercard">TRY IT!</button>
+                    <a href="./RECIPES/recipe-one.html"><button class="hovercard">TRY IT!</button></a>
                 </div>
             </div>
             <div class="cardtwo">
@@ -144,11 +148,11 @@
             <h3>CATEGORIES</h3>
         </div>
         <div class="categoriesbottom">
-            <div class="categoryone">
+            <a href="./CATEGORIES/category-one.html"><div class="categoryone">
                 <div class="overlay"> 
                 <p> > 5 INGREDIENTS</p>
                 </div>
-            </div>
+            </div></a>
             <div class="categorytwo">
                 <div class="overlay"> 
                 <p>ALL IN ONE POT</p>
