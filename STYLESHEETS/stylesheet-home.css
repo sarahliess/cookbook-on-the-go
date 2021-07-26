@@ -1,3 +1,169 @@
+/*TOP PAGE WITH THE NAVBAR*/
+.section {
+    background-image: url(https://images.unsplash.com/photo-1531932755987-f95a88affea5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.90;
+    color: white; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* how to remove the blue color from the link????????????????*/
+.navbar-brand {
+    font-family: 'Suranna';
+    color: #ffffff; 
+    font-size: 18px;
+    margin-top: 1%; 
+    text-shadow: 0 0 10px #423e3a;
+    text-decoration: none;
+    list-style:none; 
+   
+}
+
+.logo {
+    width:12%;
+    height:auto;  
+    margin-top:0; 
+    padding-top: 0; 
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:100px  auto; 
+    
+}
+
+@media screen and (min-width: 500px) and (max-width: 1015px){
+    .title {
+        margin: 25% auto; 
+    }
+    
+}
+
+.catTitle {
+    position: relative;
+    color:#f5dacc;
+    text-align: center; 
+    font-family:'Suranna'; 
+    font-size: 5em;
+    font-weight:bold; 
+    text-shadow: 0 0 15px black;
+    margin: 0 auto; 
+}
+
+.catSlogan {
+    position: relative;
+    color: #f5dacc;
+    text-align: center; 
+    font-family:'Roboto'; 
+    font-size: 1.5em;
+    text-shadow: 0 0 10px black;
+    margin: 0 auto; 
+}
+
+
+/* Site Navigation */
+.site-nav {
+  background-color: transparent;
+  color: #ffffff;
+  margin: 1% 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.site-nav li {
+	list-style: none;
+    font-family: 'Suranna';
+    font-size: 18px; 
+}
+
+.site-nav a {
+	display: block;
+	color: #ffffff;
+    text-shadow:0 0 10px #423e3a;
+    padding: 10px 20px;
+	transition-property: color, background-color;
+	transition-duration: 2s;
+}
+
+.site-nav a:hover {
+	background-color: transparent;
+	color: #f5dacc;
+    margin: 1% 1%;
+}
+
+@media screen and (max-width: 1023px) {
+	
+	.site-nav li {
+		width: 40%;
+		margin-right: 0;
+        margin-top: 0;
+        padding-top: 0; 
+	}
+	
+	.site-nav a {
+		padding: 15px 0;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+	
+}
+
+@media screen and (max-width: 767px) {	
+	.site-nav li {
+		width: 50%;
+	}
+	
+}
+
+
+.toggle-btn {
+	display: none;
+    margin: 1% 1%;
+    color: #f5dacc; 
+    background-color: transparent; 
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+	.toggle-btn-visible {
+		display: block;
+	}
+
+	.toggle-target-hidden {
+		display: none;
+	}
+
+	.toggle-target-expanded {
+		display: block;
+	}	
+}
+
 
 /*---------------------------------------------------HEADER----------------------------------------------------------*/
 
@@ -141,15 +307,18 @@
 }
 
 button.hovercard{
-    width: 60%;
+
     height: 30px;
     padding: 2% 0 2% 0;
     
 }
 
-button.hovercard:hover{
+a button.hovercard:hover{
     opacity: 100%;
-   
+}
+
+a{
+    margin: 0;
 }
 
 .cardone{

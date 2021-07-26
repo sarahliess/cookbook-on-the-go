@@ -1,1 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Suranna&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
+/*
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}*/
+
+/*TOP PAGE WITH THE NAVBAR*/
+.section {
+    background-image: url(../img/44-degrees-north-BcZvGtS9obY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.90;
+    color: white; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* how to remove the blue color from the link????????????????*/
+.navbar-brand {
+    font-family: 'Suranna';
+    color: #ffffff; 
+    font-size: 18px;
+    margin-top: 1%; 
+    text-shadow: 0 0 10px #423e3a;
+    text-decoration: none;
+    list-style:none; 
+   
+}
+
+.logo {
+    width:12%;
+    height:auto;  
+    margin-top:0; 
+    padding-top: 0; 
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:100px  auto; 
+    
+}
+
+@media screen and (min-width: 500px) and (max-width: 1015px){
+    .title {
+        margin: 25% auto; 
+    }
+    
+}
+
+.catTitle {
+    position: relative;
+    color:#f5dacc;
+    text-align: center; 
+    font-family:'Suranna'; 
+    font-size: 5em;
+    font-weight:bold; 
+    text-shadow: 0 0 15px black;
+    margin: 0 auto; 
+}
+
+.catSlogan {
+    position: relative;
+    color: #f5dacc;
+    text-align: center; 
+    font-family:'Roboto'; 
+    font-size: 1.5em;
+    text-shadow: 0 0 10px black;
+    margin: 0 auto; 
+}
+
+
+/* Site Navigation */
+.site-nav {
+  background-color: transparent;
+  color: #ffffff;
+  margin: 1% 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.site-nav li {
+	list-style: none;
+    font-family: 'Suranna';
+    font-size: 18px; 
+}
+
+.site-nav a {
+	display: block;
+	color: #ffffff;
+    text-shadow:0 0 10px #423e3a;
+    padding: 10px 20px;
+	transition-property: color, background-color;
+	transition-duration: 2s;
+}
+
+.site-nav a:hover {
+	background-color: transparent;
+	color: #f5dacc;
+    margin: 1% 1%;
+}
+
+@media screen and (max-width: 1023px) {
+	
+	.site-nav li {
+		width: 40%;
+		margin-right: 0;
+        margin-top: 0;
+        padding-top: 0; 
+	}
+	
+	.site-nav a {
+		padding: 15px 0;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+	
+}
+
+@media screen and (max-width: 767px) {	
+	.site-nav li {
+		width: 50%;
+	}
+	
+}
+
+
+.toggle-btn {
+	display: none;
+    margin: 1% 1%;
+    color: #f5dacc; 
+    background-color: transparent; 
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+	.toggle-btn-visible {
+		display: block;
+	}
+
+	.toggle-target-hidden {
+		display: none;
+	}
+
+	.toggle-target-expanded {
+		display: block;
+	}	
+}
+
+
+
+/*CATEGORY DESCRIPTION*/
+
+div.catDescription {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+    background-color: #ffffff;  
+}
+
+
+.catDescription p{
+   font-family: 'Roboto';
+   font-size: 16px; 
+   color: #423e3a;
+   line-height: 1.7em;
+   padding: 30px;
+}
+
+
+/*RECIPE IMAGES*/
+
+.recipesImg {
+    display: flex;
+    background-color: #f5dacc;
+    width: 100%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:0 auto;
+    
+}
+
+.row1,
+.row2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+.recipe {
+    display: flex;
+    width: 27%;
+    height: auto;
+    margin: 1em auto;
+    position: relative;
+    
+}
+
+.food {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.img_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    font-family: 'roboto';
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.20s; 
+}
+
+
+.img_overlay:hover {
+    opacity: 1;
+
+}
+
+.img_overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.img_overlay:hover > *  {
+    transform: translateY(0);
+}
+
+.img_title1, 
+.img_title2, 
+.img_title3, 
+.img_title4, 
+.img_title5, 
+.img_title6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Suranna';
+    font-size: 18px;
+    text-align: center;
+    color: #f5dacc;
+    text-align: center;
+}
+ 
+.backHome {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 2em auto; 
+    justify-content: center;
+    align-items: center;
+}
+#btn {
+    background-color: #cb8e7e;
+    color: #FFFFFF;
+    font-weight: bold; 
+    font-family: Roboto;
+    width: 140px;
+    border: none;
+    padding: .6em;
+    text-align: center; 
+} 
+
+#btn:hover{
+     background-color: #423e3a;
+}
 

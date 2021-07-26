@@ -1,3 +1,371 @@
+/*TOP PAGE WITH THE NAVBAR*/
+.section {
+    background-image: url(../img/44-degrees-north-BcZvGtS9obY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.90;
+    color: white; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* how to remove the blue color from the link????????????????*/
+.navbar-brand {
+    font-family: 'Suranna';
+    color: #ffffff; 
+    font-size: 18px;
+    margin-top: 1%; 
+    text-shadow: 0 0 10px #423e3a;
+    text-decoration: none;
+    list-style:none; 
+   
+}
+
+.logo {
+    width:12%;
+    height:auto;  
+    margin-top:0; 
+    padding-top: 0; 
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:100px  auto; 
+    
+}
+
+@media screen and (min-width: 500px) and (max-width: 1015px){
+    .title {
+        margin: 25% auto; 
+    }
+    
+}
+
+.catTitle {
+    position: relative;
+    color:#f5dacc;
+    text-align: center; 
+    font-family:'Suranna'; 
+    font-size: 5em;
+    font-weight:bold; 
+    text-shadow: 0 0 15px black;
+    margin: 0 auto; 
+}
+
+.catSlogan {
+    position: relative;
+    color: #f5dacc;
+    text-align: center; 
+    font-family:'Roboto'; 
+    font-size: 1.5em;
+    text-shadow: 0 0 10px black;
+    margin: 0 auto; 
+}
+
+
+/* Site Navigation */
+.site-nav {
+  background-color: transparent;
+  color: #ffffff;
+  margin: 1% 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.site-nav li {
+	list-style: none;
+    font-family: 'Suranna';
+    font-size: 18px; 
+}
+
+.site-nav a {
+	display: block;
+	color: #ffffff;
+    text-shadow:0 0 10px #423e3a;
+    padding: 10px 20px;
+	transition-property: color, background-color;
+	transition-duration: 2s;
+}
+
+.site-nav a:hover {
+	background-color: transparent;
+	color: #f5dacc;
+    margin: 1% 1%;
+}
+
+@media screen and (max-width: 1023px) {
+	
+	.site-nav li {
+		width: 40%;
+		margin-right: 0;
+        margin-top: 0;
+        padding-top: 0; 
+	}
+	
+	.site-nav a {
+		padding: 15px 0;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+	
+}
+
+@media screen and (max-width: 767px) {	
+	.site-nav li {
+		width: 50%;
+	}
+	
+}
+
+
+.toggle-btn {
+	display: none;
+    margin: 1% 1%;
+    color: #f5dacc; 
+    background-color: transparent; 
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+	.toggle-btn-visible {
+		display: block;
+	}
+
+	.toggle-target-hidden {
+		display: none;
+	}
+
+	.toggle-target-expanded {
+		display: block;
+	}	
+}
+/*----------------------------------*/
+
+
+body{
+    background-color: #cb8e7e;
+}
+
+
+/********* Title section ********/
+.title-div{
+    padding:10px;
+    background-color: rgb(204, 235, 233);
+    margin-top: 100px;;
+    background-color: #f5dacc;
+}
+
+.title{
+    text-align: center;
+    font-family:suranna;
+
+}
+
+/* .recipe-image{
+    height:550px;
+     width: 100%;
+} */
+
+
+.rec-div{
+    width: 100%;
+    height: 400px;
+    background-image: url("https://images-ext-2.discordapp.net/external/wBhgkz1csO3iTZMnQOageJPvlP7yyAfBmdnUPTp6VtQ/%3Fixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D1650%26q%3D80/https/images.unsplash.com/photo-1618839851941-979d8bece05d?width=786&height=524") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+
+}
+
+
+
+
+/* <img class="recipe-image2" 
+     src="https://images.unsplash.com/photo-1547592180-85f173990554?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" >
+     */
+   
+    
+
+/******** hover  **********/
+
+img_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    font-family: 'roboto';
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.20s; 
+}
+
+
+.img_overlay:hover {
+    opacity: 1;
+
+}
+
+.img_overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.img_overlay:hover > *  {
+    transform: translateY(0);
+}
+
+
+   
+
+
+
+
+
+/********  Ingredients  section  *****************/
+
+
+.ingredients-table{
+    padding: 2em 0 2em 0;
+}
+
+.cart-img{
+    width: 50px;
+    height:50px;
+    padding-right:10px;
+    
+    /* margin-left: 560px; */
+}
+.what-we-need{
+    text-align: center;
+    padding-top: 20px;
+    /* border-bottom: 1px solid gray; */
+   
+
+
+
+   
+}
+
+
+
+.table th {
+    width: auto !important;
+}
+
+
+
+
+
+
+/* ********   How to Prepare     ****** */
+
+.preparation-part1{
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* .cooking-img{
+    width: 50px;
+    height: 50px;
+} 
+.heading{
+}
+*/
+.preparation{
+    background-color: #f5dacc;
+}
+.how-to-prepare{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 0 2em 0;
+    text-align: center;
+    /* font-family: ;
+     */
+
+     background-color: #f5dacc;
+
+     /* border: 1px solid green; */
+}
+.how-to-prepare p{
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 200px;
+    margin-right:200px;
+}
+
+
+
+/* .video-share{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    
+}
+ */
+
+ .video-div{
+    display: flex; 
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+ 
+ #youtube-button, #share-button{
+     margin: 2em 2em 0 2em;
+ }
+.back-button{
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+
+}
+
+
+
+
+
+
+
+
 
 body{
     background-color: #cb8e7e;
