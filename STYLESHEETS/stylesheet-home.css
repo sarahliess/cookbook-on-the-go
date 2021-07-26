@@ -50,7 +50,7 @@
     
 }
 
-@media screen and (min-width: 500px  max-width: 1015px){
+@media screen and (min-width: 500px) and (max-width: 1015px){
     .title {
         margin: 25% auto; 
     }
