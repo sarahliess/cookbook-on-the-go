@@ -116,6 +116,10 @@
     margin: 1% 1%;
 }
 
+
+
+
+
 @media screen and (max-width: 1023px) {
 	
 	.site-nav li {
@@ -458,7 +462,7 @@ img.up{
         height: 450px;
     }
     
-    .header h1{
+    .catTitle{
         width: 90%;
     }
     
@@ -492,7 +496,7 @@ img.up{
         height: 350px;
     }
     
-    .header h1{
+    .catTitle{
         font-size: 3em;
     }
 
