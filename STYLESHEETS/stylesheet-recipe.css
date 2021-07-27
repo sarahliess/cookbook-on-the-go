@@ -1,6 +1,7 @@
-/*TOP PAGE WITH THE NAVBAR*/
+
+TOP PAGE WITH THE NAVBAR
 .section {
-    background-image: url(../img/44-degrees-north-BcZvGtS9obY-unsplash.jpg);
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,7 +23,7 @@
 }
 
 
-/* how to remove the blue color from the link????????????????*/
+ how to remove the blue color from the link????????????????
 .navbar-brand {
     font-family: 'Suranna';
     color: #ffffff; 
@@ -79,7 +80,7 @@
 }
 
 
-/* Site Navigation */
+ Site Navigation 
 .site-nav {
   background-color: transparent;
   color: #ffffff;
@@ -163,15 +164,14 @@
 		display: block;
 	}	
 }
-/*----------------------------------*/
-
+/*----------------------------------
 
 body{
     background-color: #cb8e7e;
 }
 
 
-/********* Title section ********/
+/********* Title section 
 .title-div{
     padding:10px;
     background-color: rgb(204, 235, 233);
@@ -188,7 +188,7 @@ body{
 /* .recipe-image{
     height:550px;
      width: 100%;
-} */
+}
 
 
 .rec-div{
@@ -210,7 +210,7 @@ body{
    
     
 
-/******** hover  **********/
+/******** hover
 
 img_overlay {
     position: absolute;
@@ -251,7 +251,7 @@ img_overlay {
 
 
 
-/********  Ingredients  section  *****************/
+/********  Ingredients  section  
 
 
 .ingredients-table{
@@ -263,12 +263,12 @@ img_overlay {
     height:50px;
     padding-right:10px;
     
-    /* margin-left: 560px; */
+    /* margin-left: 560px; 
 }
 .what-we-need{
     text-align: center;
     padding-top: 20px;
-    /* border-bottom: 1px solid gray; */
+    /* border-bottom: 1px solid gray; 
    
 
 
@@ -287,7 +287,7 @@ img_overlay {
 
 
 
-/* ********   How to Prepare     ****** */
+/* ********   How to Prepare     ****** 
 
 .preparation-part1{
    
@@ -306,7 +306,7 @@ img_overlay {
 } 
 .heading{
 }
-*/
+
 .preparation{
     background-color: #f5dacc;
 }
@@ -317,11 +317,11 @@ img_overlay {
     padding: 2em 0 2em 0;
     text-align: center;
     /* font-family: ;
-     */
+     
 
      background-color: #f5dacc;
 
-     /* border: 1px solid green; */
+     /* border: 1px solid green; 
 }
 .how-to-prepare p{
     text-align: center;
@@ -340,7 +340,7 @@ img_overlay {
     padding-top: 30px;
     
 }
- */
+ 
 
  .video-div{
     display: flex; 
@@ -367,41 +367,14 @@ img_overlay {
 
 
 
-body{
-    background-color: #cb8e7e;
-}
-
 
 /********* Title section ********/
-.title-div{
-    padding:10px;
-    background-color: rgb(204, 235, 233);
-    margin-top: 100px;;
-    background-color: #f5dacc;
-}
 
-.title{
-    text-align: center;
-    font-family:suranna;
-
-}
 
 /* .recipe-image{
     height:550px;
      width: 100%;
 } */
-
-
-.rec-div{
-    width: 100%;
-    height: 700px;
-    background-image: url("../RECIPES/Recipe-Images/pancakes.jpg") ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center ;
-
-}
-
 
 
 
@@ -411,48 +384,11 @@ body{
    
     
 
-/******** hover  **********/
-
-img_overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    display: flex;
-    font-family: 'roboto';
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.20s; 
-}
-
-
-.img_overlay:hover {
-    opacity: 1;
-
-}
-
-.img_overlay > * {
-    transform: translateY(20px);
-    transition: transform 0.25s;
-}
-
-.img_overlay:hover > *  {
-    transform: translateY(0);
-}
-
-
-   
+/******** hover  **********
 
 
 
-
-
-/********  Ingredients  section  *****************/
+/********  Ingredients  section  *
 
 
 .ingredients-table{
@@ -464,12 +400,11 @@ img_overlay {
     height:50px;
     padding-right:10px;
     
-    /* margin-left: 560px; */
-}
+    /* margin-left: 560px; 
 .what-we-need{
     text-align: center;
     padding-top: 20px;
-    /* border-bottom: 1px solid gray; */
+    /* border-bottom: 1px solid gray; 
    
 
 
@@ -487,9 +422,7 @@ img_overlay {
 
 
 
-
-/* ********   How to Prepare     ****** */
-
+/* ********   How to Prepare     
 .preparation-part1{
    
     display: flex;
@@ -508,7 +441,7 @@ img_overlay {
 .heading{
 
 }
-*/
+
 .preparation{
     background-color: #f5dacc;
 }
@@ -519,11 +452,11 @@ img_overlay {
     padding: 2em 0 2em 0;
     text-align: center;
     /* font-family: ;
-     */
+     
 
      background-color: #f5dacc;
 
-     /* border: 1px solid green; */
+     /* border: 1px solid green; 
 }
 .how-to-prepare p{
     text-align: center;
@@ -542,7 +475,7 @@ img_overlay {
     padding-top: 30px;
     
 }
- */
+ 
 
  .video-div{
     display: flex; 

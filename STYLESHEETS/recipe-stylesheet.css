@@ -1,0 +1,220 @@
+
+body{
+    background-color: #cb8e7e;
+}
+
+
+/********* Title section ********/
+.title-div{
+    padding:10px;
+    background-color: rgb(204, 235, 233);
+    margin-top: 100px;;
+    background-color: #f5dacc;
+}
+
+.title{
+    text-align: center;
+    font-family:suranna;
+
+}
+
+
+
+/* .rec-div{
+    width: 100%;
+    height: 700px;
+    background-image: url("../RECIPES/Recipe-Images/pancakes.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+
+} */
+
+
+
+
+
+   
+    
+
+/******** hover  **********/
+
+
+.rec-div{
+    position: relative;
+    width: 100%;
+}
+
+.image{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+
+.middle {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .rec-div:hover .image {
+    opacity: 0.3;
+  }
+  
+  .rec-div:hover .middle {
+    opacity: 1;
+  }
+
+
+
+  .time, .calo {
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+
+
+
+
+   
+
+
+
+
+
+/********  Ingredients  section  *****************/
+
+
+.ingredients-table{
+    padding: 2em 0 2em 0;
+}
+
+.cart-img{
+    width: 50px;
+    height:50px;
+    padding-right:10px;
+    
+    /* margin-left: 560px; */
+}
+.what-we-need{
+    text-align: center;
+    padding-top: 20px;
+    /* border-bottom: 1px solid gray; */
+   
+
+
+
+   
+}
+
+
+
+.table th {
+    width: auto !important;
+}
+
+
+
+
+
+
+/* ********   How to Prepare     ****** */
+
+.preparation-part1{
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* .cooking-img{
+    width: 50px;
+    height: 50px;
+} 
+.heading{
+
+}
+*/
+.preparation{
+    background-color: #f5dacc;
+}
+.how-to-prepare{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 0 2em 0;
+    text-align: center;
+    /* font-family: ;
+     */
+
+     background-color: #f5dacc;
+
+     /* border: 1px solid green; */
+}
+.how-to-prepare p{
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 200px;
+    margin-right:200px;
+}
+
+
+
+/* .video-share{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    
+}
+ */
+
+ .video-share{
+    display: flex; 
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f5dacc;
+ }
+ 
+ .back-top{
+    margin: 2em 2em 0 2em;
+ } 
+ .share-more{
+     margin: 2em 2em 0 2em;
+ }
+.back-button{
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+
+}
+
+
+/*** share button functionality  ****/
+
+
+
+
+
+
+

@@ -178,6 +178,11 @@
 
 /*CATEGORY DESCRIPTION*/
 
+.img_title6, .img_title6:hover, .img_title6:focus, .img_title6:active {
+    text-decoration: none;
+    color: inherit;
+  }
+
 div.catDescription {
     display: flex;
     width: 100%;
