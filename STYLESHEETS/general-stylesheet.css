@@ -53,73 +53,7 @@ p{
 }
 
 /*---------------------------------------------------NAVBAR----------------------------------------------------------*/
-/*
-.navbar{
-  width: 100%;
-  overflow-wrap: break-word;
-  /* padding-top: 6em; */
 
-
-.navbar h1{
-  color: white;
-  text-shadow: black 1px 0 10px;
-  display: inline-block;
-}
-
-.navbar img{
-  width: 60px;
-}
-
-.navbarone{
-  width: 40%;
-}
-
-.navbartwo{
-  display: flex;
-  align-items: center;
-  width: 20%;
-}
-
-.navbartwo input{
-  width: 90%;
-  max-width: 270px;;
-  padding: .4em;
-  color: white;
-}
-
-.navbarthree{
-  display: flex;
-  flex-direction: row;
-  width: 40%;
-}
-
-ul{
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.topnav a{
-  background-color: white;
-  padding: 2% 3% 2% 3%;
-  color: #423e3a;
-  text-decoration: none;
-  font-family: Roboto;
-  font-weight: bold;
-}
-
-.navitem.active{
-  background-color: #cb8e7e;
-  color: white;
-  font-weight: bold;
-  font-family: Roboto;
-}
-
-.topnav a:hover{
-  color: white;
-    background-color: #cb8e7e;
-}
 
 
 /*---------------------------------------------------FOOTER----------------------------------------------------------*/

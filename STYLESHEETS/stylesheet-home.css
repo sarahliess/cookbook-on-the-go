@@ -34,6 +34,11 @@
    
 }
 
+.navbar-brand, .navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active {
+    text-decoration: none;
+    color: #f5dacc;
+  }
+
 .logo {
     width:12%;
     height:auto;  
@@ -113,7 +118,7 @@
 .site-nav a:hover {
 	background-color: transparent;
 	color: #f5dacc;
-    margin: 1% 1%;
+
 }
 
 
@@ -397,6 +402,14 @@ button, .see-more-button, .submit-button, .hovercard{
     grid-template-columns: 1fr 1fr;
     width: 70%;
 }
+
+
+.overlay .linkclass, .linkclass:hover, .linkclass:focus, .linkclass:active, .linkclass:visited {
+    text-decoration: none;
+    color: #f5dacc;
+  }
+
+
 
 .categoryone, .categorytwo, .categorythree, .categoryfour{
     display: flex;
