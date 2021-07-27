@@ -1,0 +1,165 @@
+
+
+
+
+
+
+
+  .share-more{
+    position: relative;
+    /* font-weight: bold;  */
+    font-family: Roboto;
+}
+
+
+.pop-up{
+  position: absolute;
+  top: 100%;
+  left:100%;
+}
+
+.copy-btn{
+  outline: none;
+  color: #fff;
+  font-weight: normal;
+  background:  #cb8e7e;
+  border-radius: 1px;
+  padding:1px 1px;
+  cursor: pointer;
+  width:80px;
+  border: 1px solid transparent;
+}
+
+/* .copy-btn {
+  background-color: #cb8e7e;
+  color: #FFFFFF;
+  font-weight: 100; 
+  font-family: Roboto;
+  width: 100px;
+  border: none;
+  padding: .1em; 
+   margin-top: 1em;
+} */
+
+
+.copy-btn:hover{
+  background-color: lightgrey;
+}
+
+
+
+#in{
+  border: white solid 1px;
+  border-radius: .5em;
+  padding: .1em;
+  width: 63%;
+  background-color: white;
+}
+
+::placeholder {
+  color: white;
+  font-family: Roboto;
+}
+
+/* .copy-btn{
+  outline: none;
+  color: #fff;
+  /* font-weight: 300; */
+   /* background: #d18762;
+  border-radius: 2px;
+  font-weight: bold; 
+font-family: Roboto;
+  cursor: pointer;
+  border: 1px solid transparent; 
+   } */
+
+
+.popup{
+ 
+  position:fixed;
+  /* position:fixed; */
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%) scale(1.2);
+  /* background:#423e3a; */
+  background-color:#423e3a;
+  padding:20px;
+  border-radius: 15px;
+  max-width: 100%;
+  opacity: 0;
+  top: -150%;
+pointer-events: none;
+transition: top 0s 0.2s ease-in-out,
+           opacity 0.2s 0s ease-in-out,
+           transform 0.2s 0s ease-in-out ;
+
+
+
+}
+.popup.show{
+
+  opacity: 1;
+  top: 50%;
+  pointer-events: auto;
+  transform: translate(-50%,-50%) scale(1.6);
+  transition: top 0s 0.2s ease-in-out,
+  opacity 0.2s 0s ease-in-out,
+  transform 0.2s 0s ease-in-out ;
+ 
+}
+
+.popup .sp-cl{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+span {
+  font-size: 17px;
+  font-weight: bold;
+  color:white;
+}
+
+.content p{
+  font-size: 13px;
+  font-weight: bold;
+  color:white;
+}
+
+.sp-cl .close{
+  color: cornsilk;
+  height: 33px;
+  width: 33px;
+  background: #cb8e7e;
+  cursor:pointer;
+}
+
+
+.content ul i{
+  color: #d18762;
+  padding: 3px;
+  border: 1px solid #d18762;
+}
+
+
+
+
+/******* back to top  *******/
+
+#btn-back-to-top:hover{
+background-color:white ;
+
+}
+
+
+
+
+
+/* #btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+} */
+
