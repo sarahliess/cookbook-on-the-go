@@ -44,6 +44,11 @@
    
 }
 
+.navbar-brand, .navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active {
+    text-decoration: none;
+    color: #f5dacc;
+  }
+
 .logo {
     width:12%;
     height:auto;  
@@ -123,7 +128,7 @@
 .site-nav a:hover {
 	background-color: transparent;
 	color: #f5dacc;
-    margin: 1% 1%;
+
 }
 
 @media screen and (max-width: 1023px) {
@@ -178,9 +183,10 @@
 
 /*CATEGORY DESCRIPTION*/
 
-.img_title6, .img_title6:hover, .img_title6:focus, .img_title6:active {
+
+.recipe .linkclass, .linkclass:hover, .linkclass:focus, .linkclass:active, .linkclass:visited {
     text-decoration: none;
-    color: inherit;
+    color: #f5dacc;
   }
 
 div.catDescription {
@@ -204,6 +210,7 @@ div.catDescription {
    line-height: 1.7em;
    padding: 30px;
 }
+
 
 
 /*RECIPE IMAGES*/
